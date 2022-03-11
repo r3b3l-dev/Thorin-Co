@@ -16,13 +16,21 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
+
 @app.route("/about")
 def about():
     return render_template("about.html")
 
+
 @app.route("/contact")
-def.contact():
-    return render template("contact.html")
+def contact():
+    return render_template("contact.html")
+
+
+@app.route("/careers")
+def careers():
+    return render_template("careers.html")
+
 
 # if name is = main then we're going to run our app with 
 # the following arguments
