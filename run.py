@@ -1,10 +1,10 @@
 # import os from the standard library
 import os
 # import the flask class
-from flask import Flask
+from flask import Flask, render_template
 
 # create an instance of flask and store it in the varibale called app
-# the first argument of the flask class is the name of the applications module/package
+# the 1st argument of flask class is name of  apps module/package
 # since we're just using a single module we're just using __name__ which is a built in 
 # python variable. Flask needs this so it knows where to look for templates and static files 
 app = Flask(__name__)
@@ -14,7 +14,7 @@ app = Flask(__name__)
 # when we navigate to / root index() is triggered.
 @app.route("/")
 def index():
-    return "Hello, World"
+    return render_template("index.html")
 
 # if name is = main then we're going to run our app with 
 # the following arguments
