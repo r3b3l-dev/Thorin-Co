@@ -20,6 +20,10 @@ def index():
 def about():
     return render_template("about.html")
 
+@app.route("/contact")
+def.contact():
+    return render template("contact.html")
+
 # if name is = main then we're going to run our app with 
 # the following arguments
 if __name__ == "__main__":
