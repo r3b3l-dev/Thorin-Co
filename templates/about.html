@@ -44,7 +44,11 @@
 
         </div>
 
-        <hr class="featurette-divider">
+        {% if loop.index != 13 %}
+
+            <hr class="featurette-divider">
+        
+        {% endif %}
 
     {% endfor %}
     
