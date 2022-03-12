@@ -11250,3 +11250,8 @@ header.masthead .site-heading .h1 {
     font-size: 2.25rem;
   }
 }
+
+.flashes {
+  color: red;
+  list-style: none;
+}
