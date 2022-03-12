@@ -296,6 +296,10 @@ figure {
   margin: 0 0 1rem;
 }
 
+.col-md-5 img {
+  width: 100%;
+}
+
 img,
 svg {
   vertical-align: middle;
